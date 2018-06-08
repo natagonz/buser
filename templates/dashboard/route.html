@@ -1,0 +1,76 @@
+{% extends "layout/dashboardtemplate.html" %}
+
+{% block content %}
+<link href="{{url_for ('static',filename='dashboard/css/location.css')}}" rel="stylesheet"/>
+
+
+<div class="card">
+    <div class="content">  
+      {% from "includes/_formhelpers.html" import render_field %}
+        <form method="POST" enctype="multipart/form-data" id="form">
+         {{ form.hidden_tag() }}
+           <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  {{ render_field(form.pickup, class="form-control",disabled="disbled")}}
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  {{ render_field(form.drop, class="form-control")}}
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  {{ render_field(form.price, class="form-control",placeholder="harga")}}
+                </div>
+              </div>
+           </div>  
+           <button type="submit" class="btn btn-primary mb-2">Tambah Lokasi</button>
+       </form>    
+
+        
+
+
+
+      <!-- start -->
+        <div class="row">
+          <div class="col-md-10">
+            <div class="people-nearby">
+              {% for x in route %}
+                <div class="nearby-user">
+                  <div class="row">
+                    <div class="col-md-2 col-sm-2">
+                     	<img src="https://png.icons8.com/dusk/50/000000/paper-plane.png">                   
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                      <h4><a href="#" class="profile-link">{{x.pickup}} - {{ x.drop }}</a></h4>   
+                      <h5>Rp {{x.price }}</h5>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                      <button class="btn btn-primary pull-right">Tambah Rute</button>
+                    </div>
+                  </div>
+                </div>   
+                {% endfor %}           
+                    
+                  
+            </div>
+        	</div>	
+        </div>
+		<!-- peop;e -->
+
+	</div>
+</div>		
+
+
+
+
+
+
+
+
+
+
+
+{% endblock%}

@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BuserCab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
+	
+	<!-- Animate.css -->	
+	<link href="{{url_for ('static',filename='index/css/animate.css')}}" rel="stylesheet"/>
+	<!-- Icomoon Icon Fonts-->
+	
+	<link href="{{url_for ('static',filename='index/css/icomoon.css')}}" rel="stylesheet"/>
+	<!-- Bootstrap  -->	
+	<link href="{{url_for ('static',filename='index/css/bootstrap.css')}}" rel="stylesheet"/>
+
+	<!-- Magnific Popup -->
+
+	<link href="{{url_for ('static',filename='index/css/icomoon.css')}}" rel="stylesheet"/>
+
+	<!-- Flexslider  -->
+	
+	<link href="{{url_for ('static',filename='index/css/flexslider.css')}}" rel="stylesheet"/>
+
+	<!-- Owl Carousel -->	
+	<link href="{{url_for ('static',filename='index/css/owl.carousel.min.css')}}" rel="stylesheet"/>	
+	<link href="{{url_for ('static',filename='index/css/owl.theme.default.min.css')}}" rel="stylesheet"/>
+	
+	<!-- Flaticons  -->
+
+	<link href="{{url_for ('static',filename='index/fonts/flaticon/font/flaticon.css')}}" rel="stylesheet"/>
+
+	<!-- Theme style  -->	
+	<link href="{{url_for ('static',filename='index/css/style.css')}}" rel="stylesheet"/>
+
+	<!-- Modernizr JS -->
+	<script src="{{url_for ('static',filename='index/js/modernizr-2.6.2.min.js')}}" type="text/javascript"></script> 
+	
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div id="colorlib-logo"><a href="index.html">BuserCab</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li class="has-dropdown">
+									<a href="classes.html">Classes</a>
+									<ul class="dropdown">
+										<li><a href="classes-single.html">Classes Single</a></li>
+										<li><a href="#">Cardio Classes</a></li>
+										<li><a href="#">Muscle Classes</a></li>
+										<li><a href="#">Fitness Classes</a></li>
+										<li><a href="#">Body Building</a></li>
+									</ul>
+								</li>
+								<li><a href="schedule.html">Schedule</a></li>
+								<li><a href="about.html">Trainers</a></li>
+								<li><a href="event.html">Events</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url('https://images.pexels.com/photos/620335/pexels-photo-620335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h1>Great Trip Began From Here</h1>				   					
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	
+			  	</ul>
+		  	</div>
+		</aside>
+		
+		<div id="colorlib-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 intro-wrap animate-box">
+						<div class="intro-flex">
+							<div class="one-third intro-img" style="background-image: url('https://images.pexels.com/photos/235648/pexels-photo-235648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+								<div class="desc">
+									<h3>Charter</h3>
+									<p>Trip anywhere in Bali with our experienced driver</p>
+									<a data-toggle="modal" data-target="#exampleModalLong" class="btn btn-primary">Book Now</a>									
+								</div>
+							</div>
+							<div class="one-third intro-img" style="background-image: url('https://images.pexels.com/photos/2143/lights-party-dancing-music.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+								<div class="desc">
+									<h3>MICE</h3>
+									<p>Have an event in Bali ? let us provide transport for your event</p>
+									<a data-toggle="modal" data-target="#exampleModal" class="btn btn-primary">Book Now</a>	
+								</div>
+							</div>
+							<div class="one-third intro-img" style="background-image: url('https://images.pexels.com/photos/723240/pexels-photo-723240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+								<div class="desc">
+									<h3>Airport Transfer</h3>
+									<p>Need transport after landing in Bali ? Let us pick you up</p>
+									<a data-toggle="modal" data-target="#exampleModalAir" class="btn btn-primary">Book Now</a>		
+								</div>
+							</div>
+						</div>
+		         </div>
+				</div>
+			</div>
+		</div>
+		
+
+
+		<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Charter Transport</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	{% from "includes/_formhelpers.html" import render_field %}
+            <form method="POST" enctype="multipart/form-data" id="form">
+               {{ form.hidden_tag() }}                 
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                    	{{ render_field(form.pickup, class="form-control")}}
+                        </div>
+                    </div>
+            	    <div class="col-md-6">
+                		<div class="form-group">
+                    	{{ render_field(form.drop, class="form-control")}}	
+                        </div>
+                    </div>  
+                </div>
+
+                                        	        
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+  </form>
+    </div>
+  </div>
+</div>
+
+
+
+		<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Mice Transport</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+            <form method="POST" enctype="multipart/form-data" id="form">
+              
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                    
+                        </div>
+                    </div>
+            	    <div class="col-md-6">
+                		<div class="form-group">
+                    
+                        </div>
+                    </div>  
+                </div>
+                <div class="row">  
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        
+                        </div>
+                    </div>                 
+                                
+                    <div class="col-md-6">
+                        <div class="form-group">
+                       
+                        </div>
+                    </div>                                       
+                </div>                                         	        
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalAir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Airport Tranfer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+            <form method="POST" enctype="multipart/form-data" id="form">
+              
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                    
+                        </div>
+                    </div>
+            	    <div class="col-md-6">
+                		<div class="form-group">
+                    
+                        </div>
+                    </div>  
+                </div>
+                <div class="row">  
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        
+                        </div>
+                    </div>                 
+                                
+                    <div class="col-md-6">
+                        <div class="form-group">
+                       
+                        </div>
+                    </div>                                       
+                </div>                                         	        
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+		<div id="colorlib-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Planed your trip with us</h2>
+						<p>We have a good reason to choose,so you will have amazing trip in Bali</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<img src="https://png.icons8.com/nolan/50/000000/driver.png">
+							</span>
+							<div class="desc">
+								<h3>Amazing Driver</h3>
+								<p>Our driver was selected properly,to make sure you always satisfied</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<img src="https://png.icons8.com/nolan/50/000000/expensive-2.png">
+							</span>
+							<div class="desc">
+								<h3>Fair Price</h3>
+								<p>We provide best service for you with fair and afordable price.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<img src="https://png.icons8.com/nolan/50/000000/expensive-2.png">
+							</span>
+							<div class="desc">
+								<h3>High Quality Car</h3>
+								<p>We use brand new car and always in check every day</p>
+								</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<img src="https://png.icons8.com/nolan/50/000000/online-support.png">
+							</span>
+							<div class="desc">
+								<h3>Free Consultation</h3>
+								<p>Ask me anything about your next trip in Bali,we will help you</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<div id="colorlib-testimony" class="testimony-img" style="background-image: url('https://images.pexels.com/photos/787472/pexels-photo-787472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>What People Says</h2>
+						<h3>BuserCab Testimonial</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="row animate-box">
+							<div class="owl-carousel1">
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>Andrew Smith</span>
+												<p>Amazing services,they have a good package and super friendly driver. We will book again when go to Bali.</p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>John Collins</span>
+												<p>Recomendded for traveler who trip in Bali. Cheap, profesional and friendly services </p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url('https://images.pexels.com/photos/769772/pexels-photo-769772.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>Adam Ross</span>
+												<p>Go lonely trip in Bali never be scary again. They pick me up at airport and send my anywhere in Bali</p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url('https://images.pexels.com/photos/567459/pexels-photo-567459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+
+		
+	
+		
+		<footer id="colorlib-footer">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>About Robust Gym</h4>
+						<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-md-3 colorlib-widget">
+						<h4>Quick Links</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="icon-check"></i> About Us</a></li>
+								<li><a href="#"><i class="icon-check"></i> Testimonials</a></li>
+								<li><a href="#"><i class="icon-check"></i> Classes</a></li>
+								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
+								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
+								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="col-md-3 colorlib-widget">
+						<h4>Recent Post</h4>
+						<div class="f-blog">
+							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
+							</a>
+							<div class="desc">
+								<h2><a href="blog.html">Tips for sexy body</a></h2>
+								<p class="admin"><span>18 April 2018</span></p>
+							</div>
+						</div>
+						<div class="f-blog">
+							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
+							</a>
+							<div class="desc">
+								<h2><a href="blog.html">Tips for sexy body</a></h2>
+								<p class="admin"><span>18 April 2018</span></p>
+							</div>
+						</div>
+						<div class="f-blog">
+							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
+							</a>
+							<div class="desc">
+								<h2><a href="blog.html">Tips for sexy body</a></h2>
+								<p class="admin"><span>18 April 2018</span></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 colorlib-widget">
+						<h4>Contact Info</h4>
+						<ul class="colorlib-footer-links">
+							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
+							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
+							<li><a href="http://luxehotel.com"><i class="icon-location4"></i> yourwebsite.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								<small class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small><br> 
+								<small class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>, <a href="http://pexels.com/" target="_blank">Pexels</a></small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	
+	<script src="{{url_for ('static',filename='index/js/jquery.min.js')}}" type="text/javascript"></script> 
+	<!-- jQuery Easing -->
+	
+	<script src="{{url_for ('static',filename='index/js/jquery.easing.1.3.js')}}" type="text/javascript"></script> 
+	<!-- Bootstrap -->
+	
+	<script src="{{url_for ('static',filename='index/js/bootstrap.min.js')}}" type="text/javascript"></script> 
+	<!-- Waypoints -->
+	
+	<script src="{{url_for ('static',filename='index/js/jquery.waypoints.min.js')}}" type="text/javascript"></script> 
+	<!-- Stellar Parallax -->
+	
+	<script src="{{url_for ('static',filename='index/js/jquery.stellar.min.js')}}" type="text/javascript"></script> 
+	<!-- Flexslider -->
+
+	<script src="{{url_for ('static',filename='index/js/jquery.flexslider-min.js')}}" type="text/javascript"></script> 
+	<!-- Owl carousel -->
+	
+	<script src="{{url_for ('static',filename='index/js/owl.carousel.min.js')}}" type="text/javascript"></script>
+	<!-- Magnific Popup -->
+	
+	<script src="{{url_for ('static',filename='index/js/jquery.magnific-popup.min.js')}}" type="text/javascript"></script>
+	
+	<script src="{{url_for ('static',filename='index/js/magnific-popup-options.js')}}" type="text/javascript"></script>
+	<!-- Counters -->
+	
+	<script src="{{url_for ('static',filename='index/js/jquery.countTo.js')}}" type="text/javascript"></script>
+	<!-- Main -->
+	
+	<script src="{{url_for ('static',filename='index/js/main.js')}}" type="text/javascript"></script>
+
+	</body>
+</html>
+

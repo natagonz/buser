@@ -1,0 +1,52 @@
+{% extends "layout/authlayout.html" %}
+{% block title %} Register {% endblock %}
+
+{% block content %}
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+				
+					<span class="login100-form-title p-b-32">
+						Create Account 
+					</span>
+					
+					  
+					  {% from "includes/_formhelpers.html" import render_field %}
+		                <form class="form-signin" method="POST" enctype="multipart/form-data">
+		              {{ form.hidden_tag() }}                               
+					
+					     <div class="form-group">
+		                     {{ render_field(form.username, class="form-control")}}
+		                </div>               
+
+		                <div class="form-group">
+		                     {{ render_field(form.email, class="form-control")}}
+		                </div>              
+
+
+		                <div class="form-group">
+		                     {{ render_field(form.password, class="form-control")}}
+		                </div> 
+                              
+                
+					
+					<div class="flex-sb-m w-full p-b-48">
+						
+						<div>
+							<a href="/login" class="txt3">
+								Already have an accuont ? login
+							</a>
+						</div>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button type="submit" class="btn btn-primary btn-gradient submit">Sign Up</button>
+					</div>
+
+				  </form>
+			</div>
+		</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+{% endblock %}

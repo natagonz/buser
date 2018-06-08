@@ -1,0 +1,65 @@
+{% extends "layout/usertemplate.html" %}
+
+{% block content %}
+<div class="row">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="card card-user">
+                            <div class="image">
+                               
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                  <img src="https://png.icons8.com/dusk/50/000000/paper-plane.png" alt="..."/>
+                                  <br>
+                                  <br>
+                                  <h4 class="title">Order Detail                                    
+                                  </h4>
+                                </div>
+                                <br>
+                                <h6 class="title text-left">
+                                    Route : {{ book.pickup }} - {{ book.drop }}
+                                </h6>       
+                                <h6 class="title text-left">
+                                    Cost : Rp {{ book.price }}
+                                </h6>   
+                                <h6 class="title text-left">
+                                    Username : {{ book.username }}
+                                </h6>    
+                                <h6 class="title text-left">
+                                    Email : {{ book.email }}
+                                </h6>     
+                                <h6 class="title text-left">
+                                    Phone : {{ book.phone }}
+                                </h6>     
+                                  
+                                <h6 class="title text-left">
+                                    Date : {{ book.date }}
+                                </h6>                               
+                               
+                            </div>
+                            
+                            
+                        </div>
+                    </div>   
+                    <div class="col-lg-8 col-md-7">
+                        <div class="card">
+                            <div class="header">
+                                <h3 class="title">Pay With Card</h4>
+                            </div>
+                            <div class="content">
+                            <h4>You only pay Rp 150.000 by credit card and the remaining you can pay to driver</h4>
+                            <a href="" class="btn btn-success">Pay Here</a>
+                                
+
+                                    
+                                    
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "layout/dashboardtemplate.html" %}
+
+{% block content %}
+<link href="{{url_for ('static',filename='dashboard/css/location.css')}}" rel="stylesheet"/>
+
+
+<div class="card">
+    <div class="content">
+    	<div class="container">        
+        <div class="row">
+          <div class="col-md-10">
+            {% from "includes/_formhelpers.html" import render_field %}
+            <form method="POST" enctype="multipart/form-data" id="form">
+               {{ form.hidden_tag() }}             
+                <div class="form-group">                
+                  {{ render_field(form.name, class="form-control",placeholder="nama lokasi")}}
+                </div>
+              <button type="submit" class="btn btn-primary mb-2">Tambah Lokasi</button>
+            
+          </div>
+        </div>
+
+
+    <div class="row">
+        <div class="col-md-10">
+            <div class="people-nearby">
+              {% for location in locations %}
+              <div class="nearby-user">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                  	<img src="https://png.icons8.com/dusk/50/000000/paper-plane.png">                   
+                  </div>
+                  <div class="col-md-7 col-sm-7">
+                    <h5><a href="#" class="profile-link">{{location.name}}</a></h5>                    
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <a href="/dashboard/admin/route/{{location.name}}" class="btn btn-primary pull-right">Tambah Rute</a>
+                  </div>
+                </div>
+              </div>   
+              {% endfor %}           
+                
+              
+            </div>
+    	</div>
+	</div>
+</div>
+		
+	</div>
+</div>		
+
+
+
+
+
+
+
+
+
+
+
+{% endblock%}

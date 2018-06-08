@@ -1,0 +1,88 @@
+{% extends "layout/usertemplate.html" %}
+
+{% block content %}
+<div class="row">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="card card-user">
+                            <div class="image">
+                               
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                  <img src="https://png.icons8.com/dusk/50/000000/paper-plane.png" alt="..."/>
+                                  <br>
+                                  <br>
+                                  <h4 class="title">Order Detail                                    
+                                  </h4>
+                                </div>
+                                <h5 class="title text-center">
+                                    Route : {{ pickup }} - {{ drop }}
+                                </h5>       
+                                <h5 class="title text-center">
+                                    Cost : Rp {{ price }}
+                                </h5>                                  
+                               
+                            </div>
+                            
+                            
+                        </div>
+                    </div>   
+                    <div class="col-lg-8 col-md-7">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Booking Detail</h4>
+                            </div>
+                            <div class="content">
+                                {% from "includes/_formhelpers.html" import render_field %}
+                                    <form method="POST" enctype="multipart/form-data" id="form">
+                                       {{ form.hidden_tag() }}     
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                               {{ render_field(form.username, class="form-control")}}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                {{ render_field(form.email, class="form-control")}}
+                                            </div>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                {{ render_field(form.phone, class="form-control")}}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                {{ render_field(form.date, class="form-control dtpick")}}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                {{ render_field(form.detail, class="form-control")}}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-info btn-fill btn-wd">Update Profile</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+{% endblock %}
